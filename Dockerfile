@@ -15,6 +15,7 @@ RUN git clone -b master --single-branch --depth=1 https://github.com/bramstein/s
   && cd /tmp/sfnt2woff-zopfli \
   && make \
   && mv sfnt2woff-zopfli /usr/local/bin/sfnt2woff
-RUN gem install fontcustom
 
 USER circleci
+
+RUN gem install fontcustom
